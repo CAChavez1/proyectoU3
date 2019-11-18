@@ -16,6 +16,8 @@ public class frmAltas extends javax.swing.JFrame {
      */
     public frmAltas() {
         initComponents();
+        this.setLocationRelativeTo(null);
+        this.setDefaultCloseOperation(frmAltas.DO_NOTHING_ON_CLOSE);
     }
 
     /**
@@ -59,6 +61,11 @@ public class frmAltas extends javax.swing.JFrame {
         lblDepa.setText("Departamento");
 
         btnRegresar.setText("REGRESAR");
+        btnRegresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegresarActionPerformed(evt);
+            }
+        });
 
         btnAceptar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/imagen01.jpg"))); // NOI18N
 
@@ -127,6 +134,12 @@ public class frmAltas extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
+        frmInicio btnRegresar = new frmInicio();
+        btnRegresar.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnRegresarActionPerformed
 
     /**
      * @param args the command line arguments

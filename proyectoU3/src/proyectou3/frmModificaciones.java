@@ -16,6 +16,8 @@ public class frmModificaciones extends javax.swing.JFrame {
      */
     public frmModificaciones() {
         initComponents();
+        this.setLocationRelativeTo(null);
+        this.setDefaultCloseOperation(frmModificaciones.DO_NOTHING_ON_CLOSE);
     }
 
     /**
@@ -61,6 +63,11 @@ public class frmModificaciones extends javax.swing.JFrame {
         jScrollPane1.setViewportView(tblObjetos);
 
         btnRegresar.setText("REGRESAR");
+        btnRegresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegresarActionPerformed(evt);
+            }
+        });
 
         btnModificar.setText("MODIFICAR");
 
@@ -96,6 +103,12 @@ public class frmModificaciones extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
+        frmInicio btnRegresar = new frmInicio();
+        btnRegresar.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnRegresarActionPerformed
 
     /**
      * @param args the command line arguments

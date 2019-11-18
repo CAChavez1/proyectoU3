@@ -37,10 +37,15 @@ public class frmInicio extends javax.swing.JFrame {
         btnModificaciones = new javax.swing.JButton();
         lblImagen00 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
         btnAutor.setText("AUTOR");
+        btnAutor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAutorActionPerformed(evt);
+            }
+        });
 
         btnSalir.setText("SALIR");
         btnSalir.addActionListener(new java.awt.event.ActionListener() {
@@ -50,12 +55,32 @@ public class frmInicio extends javax.swing.JFrame {
         });
 
         btnAltas.setText("ALTAS");
+        btnAltas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAltasActionPerformed(evt);
+            }
+        });
 
         btnBajas.setText("BAJAS");
+        btnBajas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBajasActionPerformed(evt);
+            }
+        });
 
         btnConsultas.setText("CONSULTAS");
+        btnConsultas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnConsultasActionPerformed(evt);
+            }
+        });
 
         btnModificaciones.setText("MODIFICACIONES");
+        btnModificaciones.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnModificacionesActionPerformed(evt);
+            }
+        });
 
         lblImagen00.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/imagen00.jpg"))); // NOI18N
 
@@ -108,6 +133,31 @@ public class frmInicio extends javax.swing.JFrame {
     private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
       System.exit(0);
     }//GEN-LAST:event_btnSalirActionPerformed
+
+    private void btnAutorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAutorActionPerformed
+        frmAutor btnAutor = new frmAutor();
+        btnAutor.setVisible(true);
+    }//GEN-LAST:event_btnAutorActionPerformed
+
+    private void btnAltasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAltasActionPerformed
+        frmAltas btnAltas = new frmAltas();
+        btnAltas.setVisible(true);
+    }//GEN-LAST:event_btnAltasActionPerformed
+
+    private void btnBajasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBajasActionPerformed
+        frmBajas btnBajas = new frmBajas();
+        btnBajas.setVisible(true);
+    }//GEN-LAST:event_btnBajasActionPerformed
+
+    private void btnConsultasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConsultasActionPerformed
+        frmConsultas btnConsultas = new frmConsultas();
+        btnConsultas.setVisible(true);
+    }//GEN-LAST:event_btnConsultasActionPerformed
+
+    private void btnModificacionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificacionesActionPerformed
+        frmModificaciones btnModificaciones = new frmModificaciones();
+        btnModificaciones.setVisible(true);
+    }//GEN-LAST:event_btnModificacionesActionPerformed
 
     /**
      * @param args the command line arguments

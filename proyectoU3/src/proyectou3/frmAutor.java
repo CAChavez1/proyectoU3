@@ -16,6 +16,8 @@ public class frmAutor extends javax.swing.JFrame {
      */
     public frmAutor() {
         initComponents();
+        this.setLocationRelativeTo(null);
+        this.setDefaultCloseOperation(frmAutor.DO_NOTHING_ON_CLOSE);
     }
 
     /**
@@ -32,11 +34,17 @@ public class frmAutor extends javax.swing.JFrame {
         lblSemestre = new javax.swing.JLabel();
         lblFecha = new javax.swing.JLabel();
         lblMateria = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setResizable(false);
 
         btnRegresar.setText("REGRESAR");
+        btnRegresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegresarActionPerformed(evt);
+            }
+        });
 
         lblNombre.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         lblNombre.setText("Carlos Andrés Chávez Guzmán");
@@ -49,6 +57,8 @@ public class frmAutor extends javax.swing.JFrame {
 
         lblMateria.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         lblMateria.setText("Programación Orientada a Objetos y Eventos");
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/imagen03.jpg"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -71,7 +81,10 @@ public class frmAutor extends javax.swing.JFrame {
                         .addComponent(lblNombre))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(74, 74, 74)
-                        .addComponent(lblMateria)))
+                        .addComponent(lblMateria))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(206, 206, 206)
+                        .addComponent(jLabel1)))
                 .addContainerGap(77, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -79,7 +92,9 @@ public class frmAutor extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addComponent(btnRegresar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 133, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
                 .addComponent(lblNombre)
                 .addGap(18, 18, 18)
                 .addComponent(lblSemestre)
@@ -92,6 +107,12 @@ public class frmAutor extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
+        frmInicio btnRegresar = new frmInicio();
+        btnRegresar.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnRegresarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -130,6 +151,7 @@ public class frmAutor extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnRegresar;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lblFecha;
     private javax.swing.JLabel lblMateria;
     private javax.swing.JLabel lblNombre;
