@@ -27,28 +27,28 @@ public class frmAutor extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        btnRegresar = new javax.swing.JButton();
+        lblNombre = new javax.swing.JLabel();
+        lblSemestre = new javax.swing.JLabel();
+        lblFecha = new javax.swing.JLabel();
+        lblMateria = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setResizable(false);
 
-        jButton1.setText("REGRESAR");
+        btnRegresar.setText("REGRESAR");
 
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        jLabel1.setText("Carlos Andrés Chávez Guzmán");
+        lblNombre.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        lblNombre.setText("Carlos Andrés Chávez Guzmán");
 
-        jLabel2.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        jLabel2.setText("Tercer Semestre");
+        lblSemestre.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        lblSemestre.setText("Tercer Semestre");
 
-        jLabel3.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        jLabel3.setText("Noviembre 29,2019");
+        lblFecha.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        lblFecha.setText("Noviembre 29,2019");
 
-        jLabel4.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        jLabel4.setText("Programación Orientada a Objetos y Eventos");
+        lblMateria.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        lblMateria.setText("Programación Orientada a Objetos y Eventos");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -56,37 +56,37 @@ public class frmAutor extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jButton1)
+                .addComponent(btnRegresar)
                 .addGap(29, 29, 29))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(184, 184, 184)
-                        .addComponent(jLabel2))
+                        .addComponent(lblSemestre))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(175, 175, 175)
-                        .addComponent(jLabel3))
+                        .addComponent(lblFecha))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(124, 124, 124)
-                        .addComponent(jLabel1))
+                        .addComponent(lblNombre))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(74, 74, 74)
-                        .addComponent(jLabel4)))
+                        .addComponent(lblMateria)))
                 .addContainerGap(77, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(20, 20, 20)
-                .addComponent(jButton1)
+                .addComponent(btnRegresar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 133, Short.MAX_VALUE)
-                .addComponent(jLabel1)
+                .addComponent(lblNombre)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel2)
+                .addComponent(lblSemestre)
                 .addGap(29, 29, 29)
-                .addComponent(jLabel3)
+                .addComponent(lblFecha)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel4)
+                .addComponent(lblMateria)
                 .addGap(40, 40, 40))
         );
 
@@ -129,10 +129,10 @@ public class frmAutor extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JButton btnRegresar;
+    private javax.swing.JLabel lblFecha;
+    private javax.swing.JLabel lblMateria;
+    private javax.swing.JLabel lblNombre;
+    private javax.swing.JLabel lblSemestre;
     // End of variables declaration//GEN-END:variables
 }
